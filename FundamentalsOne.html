@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./favicon.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style_curriculum.css">
+  <title>SDLC</title>
+  <style>
+    .navbar {
+      position: sticky;
+      top: 0px;
+      z-index: 1;
+      background-color: white;
+    }
+
+    video::-webkit-media-controls {
+      display: none !important;
+    }
+
+    video {
+      display: block;
+      margin: 0 auto;
+      height: 500px;
+    }
+
+    h1 {
+      color: cornflowerblue;
+      font-family: 'Arial', sans-serif;
+      font-size: 3em;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      /* Green background color */
+      color: white;
+      /* White text color */
+      padding: 10px 20px;
+      /* Padding inside the button */
+      font-size: 16px;
+      /* Font size */
+      border: none;
+      /* No border */
+      border-radius: 5px;
+      /* Rounded corners */
+      cursor: pointer;
+      /* Cursor on hover */
+    }
+
+    /* Style on hover */
+    button:hover {
+      background-color: #45a049;
+    }
+
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .skew-container {
+      position: relative;
+      overflow: hidden;
+      margin: 20px;
+    }
+
+    .skew-img {
+      width: 100%;
+      height: 580px;
+      transform: skew(-5deg);
+      transition: transform 0.5s ease;
+      object-fit: fill;
+    }
+
+    .skew-img:hover {
+      transform: skew(0deg);
+    }
+
+    footer {
+      text-align: center;
+    }
+
+    article {
+      display: inline;
+      /* This is to make the <article> behave like inline */
+    }
+
+    /* Define a keyframe animation named 'colorChange' */
+    @keyframes colorChange {
+      0% {
+        color: red;
+      }
+
+      25% {
+        color: blue;
+      }
+
+      50% {
+        color: green;
+      }
+
+      75% {
+        color: orange;
+      }
+
+      100% {
+        color: purple;
+      }
+    }
+
+    /* Apply the animation to each letter with a delay */
+    h1 span {
+      display: inline-block;
+      /* Ensure each letter is a block element */
+      animation: colorChange 1s infinite;
+      /* 5 seconds duration, infinite loop */
+      animation-delay: calc(0.1s * var(--index));
+      /* Delay each letter */
+      font-size: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- header section -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <!-- company logo -->
+    <a class="navbar-brand" href="./index.html">
+      <img class="logo" src="./logo.png" alt="" width="120px">
+    </a>
+    <h1>
+      <span style="--index: 1;">D</span>
+      <span style="--index: 2;">i</span>
+      <span style="--index: 3;">g</span>
+      <span style="--index: 4;">i</span>
+      <span style="--index: 5;">t</span>
+      <span style="--index: 6;">a</span>
+      <span style="--index: 7;">l</span>
+      <span style="--index: 8;"></span>
+      <span style="--index: 9;">L</span> <!-- Add spaces if needed -->
+      <span style="--index: 10;">y</span>
+      <span style="--index: 11;">n</span>
+      <span style="--index: 12;">c</span>
+    </h1>
+    <!-- <h1 style="margin-right: 10px; color: slateblue">Digital Lync</h1> -->
+    <!-- <h1 style="color: crimson;"> <b>SDLC</b> :Software Development Life Cycle</h1> -->
+    <h1 style="color:crimson;"><u>Agenda: SDLC</u></h1>
+    <!-- responsive toogler -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+  </nav>
+
+  <hr>
+  <div style="text-align: center;">
+    <video id="myVideo" autoplay muted loop src="./images_sdlc/images_sdlc.mp4" style="width: 100%;"></video>
+
+    <br>
+    <button onclick="playPause()">Play/Pause</button>
+  </div>
+
+  <hr>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="skew-container">
+          <img src="./images_sdlc/1.png" alt="Image 1" class="skew-img">
+        </div>
+      </div>
+
+      <div class="col-md-12">
+        <div class="skew-container">
+          <img src="./images_sdlc/2.png" alt="Image 2" class="skew-img">
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="skew-container">
+          <img src="./images_sdlc/3.png" alt="Image 3" class="skew-img">
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="skew-container">
+          <img src="./images_sdlc/4.png" alt="Image 3" class="skew-img">
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="skew-container">
+          <img src="./images_sdlc/5.png" alt="Image 3" class="skew-img">
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="skew-container">
+          <img src="./images_sdlc/6.png" alt="Image 3" class="skew-img">
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="skew-container">
+          <img src="./images_sdlc/7.png" alt="Image 3" class="skew-img">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    Designed by <article>Sajeed Saif - Fullstack Technologist</article>
+  </footer>
+
+  <script>
+    var video = document.getElementById("myVideo");
+
+    function playPause() {
+      if (video.paused) {
+        video.play();
+      } else {
+        video.pause();
+      }
+    }
+  </script>
+
+  <!-- Disable Right Click -->
+  <script>
+    document.addEventListener('contextmenu', function (e) {
+      e.preventDefault();
+    });
+  </script>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
